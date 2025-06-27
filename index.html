@@ -1,158 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PyleaMUN Student Officer Interview Guidelines</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        header {
-            background: #fff;
-            padding: 10px 0;
-            text-align: center;
-            border-bottom: 3px solid #0056b3;
-        }
-        header img {
-            max-width: 100%;
-            height: auto;
-        }
-        header h1 {
-            color: #004a99;
-            margin-top: 10px;
-        }
-        main {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #f4f4f4;
-            padding-bottom: 10px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            background: #eef;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-left: 5px solid #0056b3;
-            border-radius: 4px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyleaMUN Student Officer Interview Guidelines</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Letterhead Styles */
+    .letterhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f2f2;
+      border-bottom: 2px solid #444;
+      padding: 10px 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100px;
+    }
+
+    .address, .contact {
+      width: 25%;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .contact div {
+      margin: 2px 0;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+
+    .letterhead a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .letterhead a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px 0;
+    }
+
+    h1 {
+      color: #004a99;
+      text-align: center;
+      font-size: 2em;
+      margin: 30px 0 10px;
+    }
+
+    main {
+      padding: 20px;
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    h2 {
+      color: #0056b3;
+      border-bottom: 2px solid #f4f4f4;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #eef;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-left: 5px solid #0056b3;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .stamp {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      width: 150px;
+      height: auto;
+      opacity: 0.75;
+      transform: rotate(12deg);
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      body {
+        font-size: 1em;
+      }
+      .stamp {
+        width: 100px;
+        bottom: 15px;
+        right: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <img src="Letterhead.jpg" alt="PyleaMUN Letterhead">
-            <h1>Guidelines for the PyleaMUN Student Officers' Interview</h1>
-        </div>
-    </header>
-
-    <div class="container">
-        <main>
-            <section id="understanding">
-                <h2>I. Understanding of MUN and Procedural Knowledge</h2>
-                <ul>
-                    <li>Could you elaborate on your past involvement in Model UN, placing special emphasis on any instances where you held a leadership position such as Chair, Vice-Chair, or Head Delegate?</li>
-                    <li>In your view, what are the fundamental duties of a MUN Chair that extend beyond merely moderating the debate?</li>
-                    <li>How do you perceive the Chair's capacity to shape a genuinely educational and stimulating experience for all delegates?</li>
-                    <li>From your perspective, what are the essential elements of a thriving MUN committee, and what specific actions would you take as Chair to foster that success?</li>
-                    <li>How extensive is your knowledge of various Rules of Procedure, such as THIMUN or UN4MUN? Do you have a preference, and could you justify it?</li>
-                </ul>
-            </section>
-
-            <section id="leadership">
-                <h2>II. Leadership and Committee Management</h2>
-                <ul>
-                    <li>Can you recount a specific instance where you had to manage a delegate who was being particularly challenging or disruptive? What was your approach, and what was the final resolution?</li>
-                    <li>What strategies would you implement to cultivate an inclusive environment where delegates of all experience levels feel confident and motivated to participate?</li>
-                    <li>How do you intend to maintain a focused, productive, and timely flow of debate within the committee?</li>
-                    <li>If you noticed that delegates were finding it difficult to grasp a complex substantive issue or a procedural point, how would you intervene to assist them?</li>
-                    <li>Could you outline your strategy for effective collaboration with your co-Chair and the broader Secretariat team?</li>
-                    <li>Describe your methodology for delivering constructive and encouraging feedback to delegates to aid their development.</li>
-                </ul>
-            </section>
-
-            <section id="expertise">
-                <h2>III. Committee and Topic Expertise</h2>
-                <ul>
-                    <li>Which committees are you most drawn to chairing, and what are your reasons for this preference?</li>
-                    <li>What preliminary ideas do you have for potential agenda items for the committee(s) you are interested in? This question aims to gauge your proactive interest and initial preparation.</li>
-                    <li>How would you go about conducting thorough research to master the committee's topic and the array of potential policy solutions?</li>
-                    <li>What is your process for ensuring that the background guide is not only comprehensive and clear but also a nuanced and accurate representation of the topic's complexities?</li>
-                </ul>
-            </section>
-
-            <section id="problem-solving">
-                <h2>IV. Problem-Solving and Adaptability</h2>
-                <ul>
-                    <li>Envision a scenario where a major technical malfunction disrupts your committee session. What would be your immediate course of action?</li>
-                    <li>How would you proceed if a delegate raised a parliamentary point that you were not immediately certain how to rule on?</li>
-                    <li>Share an experience from a past MUN conference where you had to adapt swiftly to an unforeseen challenge or change.</li>
-                    <li>How would you guarantee impartiality and fairness in your decisions, particularly in situations where your personal views might diverge from the matter at hand?</li>
-                </ul>
-            </section>
-
-            <section id="vision">
-                <h2>V. Vision and Contribution to PyleaMUN</h2>
-                <ul>
-                    <li>What distinct qualities and perspectives would you bring to the PyleaMUN Student Officer team?</li>
-                    <li>What are your aspirations for the upcoming PyleaMUN conference, and how do you envision your role contributing to its overall success?</li>
-                    <li>Does any specific aspect of PyleaMUN's mission or values particularly resonate with you?</li>
-                    <li>What kind of delegate experience do you aspire to create and facilitate at PyleaMUN?</li>
-                </ul>
-            </section>
-
-            <section id="un-knowledge">
-                <h2>VI. United Nations Knowledge</h2>
-                <ul>
-                    <li>When and why was the United Nations established?</li>
-                    <li>What are the primary objectives of the United Nations as outlined in its Charter?</li>
-                    <li>Who is the current Secretary-General of the United Nations?</li>
-                </ul>
-            </section>
-
-            <section id="personal">
-                <h2>VII. Personal Attributes</h2>
-                <ul>
-                    <li>What is your primary motivation for seeking a position as a Student Officer at PyleaMUN?</li>
-                    <li>What personal growth and skills do you hope to acquire from this leadership experience?</li>
-                    <li>How do you typically manage stress and maintain your composure in high-pressure environments?</li>
-                    <li>Reflecting on your personal strengths and weaknesses, how do they relate to the demands of a leadership role?</li>
-                    <li>Do you have any questions for us about the Student Officer role or the PyleaMUN conference?</li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; PyleaMUN Conference Team</p>
-        </footer>
+  <div class="letterhead">
+    <div class="address">
+      <strong>4 Isminis Str.</strong><br>
+      Pylaia, Thessaloniki - 55535
     </div>
+    <div>
+      <img src="pyleaMUNfinallogo_transparent.png" alt="PyleaMUN Logo" class="logo">
+    </div>
+    <div class="contact">
+      <div>📞 +30 2310329199</div>
+      <div>📧 <a href="mailto:pyleamun@gmail.com">pyleamun@gmail.com</a></div>
+      <div>🌐 <a href="https://pyleamun.github.io/pyleamun2026/" target="_blank">pyleamun.github.io/pyleamun2026</a></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Guidelines for the PyleaMUN Student Officers' Interview</h1>
+
+    <main>
+      <section id="understanding">
+        <h2>I. Understanding of MUN and Procedural Knowledge</h2>
+        <ul>
+          <li>Could you elaborate on your past involvement in Model UN, placing special emphasis on any instances where you held a leadership position such as Chair, Vice-Chair, or Head Delegate?</li>
+          <li>In your view, what are the fundamental duties of a MUN Chair that extend beyond merely moderating the debate?</li>
+          <li>How do you perceive the Chair's capacity to shape a genuinely educational and stimulating experience for all delegates?</li>
+          <li>From your perspective, what are the essential elements of a thriving MUN committee, and what specific actions would you take as Chair to foster that success?</li>
+          <li>How extensive is your knowledge of various Rules of Procedure, such as THIMUN or UN4MUN? Do you have a preference, and could you justify it?</li>
+        </ul>
+      </section>
+
+      <section id="leadership">
+        <h2>II. Leadership and Committee Management</h2>
+        <ul>
+          <li>Can you recount a specific instance where you had to manage a delegate who was being particularly challenging or disruptive? What was your approach, and what was the final resolution?</li>
+          <li>What strategies would you implement to cultivate an inclusive environment where delegates of all experience levels feel confident and motivated to participate?</li>
+          <li>How do you intend to maintain a focused, productive, and timely flow of debate within the committee?</li>
+          <li>If you noticed that delegates were finding it difficult to grasp a complex substantive issue or a procedural point, how would you intervene to assist them?</li>
+          <li>Could you outline your strategy for effective collaboration with your co-Chair and the broader Secretariat team?</li>
+          <li>Describe your methodology for delivering constructive and encouraging feedback to delegates to aid their development.</li>
+        </ul>
+      </section>
+
+      <section id="expertise">
+        <h2>III. Committee and Topic Expertise</h2>
+        <ul>
+          <li>Which committees are you most drawn to chairing, and what are your reasons for this preference?</li>
+          <li>What preliminary ideas do you have for potential agenda items for the committee(s) you are interested in? This question aims to gauge your proactive interest and initial preparation.</li>
+          <li>How would you go about conducting thorough research to master the committee's topic and the array of potential policy solutions?</li>
+          <li>What is your process for ensuring that the background guide is not only comprehensive and clear but also a nuanced and accurate representation of the topic's complexities?</li>
+        </ul>
+      </section>
+
+      <section id="problem-solving">
+        <h2>IV. Problem-Solving and Adaptability</h2>
+        <ul>
+          <li>Envision a scenario where a major technical malfunction disrupts your committee session. What would be your immediate course of action?</li>
+          <li>How would you proceed if a delegate raised a parliamentary point that you were not immediately certain how to rule on?</li>
+          <li>Share an experience from a past MUN conference where you had to adapt swiftly to an unforeseen challenge or change.</li>
+          <li>How would you guarantee impartiality and fairness in your decisions, particularly in situations where your personal views might diverge from the matter at hand?</li>
+        </ul>
+      </section>
+
+      <section id="vision">
+        <h2>V. Vision and Contribution to PyleaMUN</h2>
+        <ul>
+          <li>What distinct qualities and perspectives would you bring to the PyleaMUN Student Officer team?</li>
+          <li>What are your aspirations for the upcoming PyleaMUN conference, and how do you envision your role contributing to its overall success?</li>
+          <li>Does any specific aspect of PyleaMUN's mission or values particularly resonate with you?</li>
+          <li>What kind of delegate experience do you aspire to create and facilitate at PyleaMUN?</li>
+        </ul>
+      </section>
+
+      <section id="un-knowledge">
+        <h2>VI. United Nations Knowledge</h2>
+        <ul>
+          <li>When and why was the United Nations established?</li>
+          <li>What are the primary objectives of the United Nations as outlined in its Charter?</li>
+          <li>Who is the current Secretary-General of the United Nations?</li>
+        </ul>
+      </section>
+
+      <section id="personal">
+        <h2>VII. Personal Attributes</h2>
+        <ul>
+          <li>What is your primary motivation for seeking a position as a Student Officer at PyleaMUN?</li>
+          <li>What personal growth and skills do you hope to acquire from this leadership experience?</li>
+          <li>How do you typically manage stress and maintain your composure in high-pressure environments?</li>
+          <li>Reflecting on your personal strengths and weaknesses, how do they relate to the demands of a leadership role?</li>
+          <li>Do you have any questions for us about the Student Officer role or the PyleaMUN conference?</li>
+        </ul>
+      </section>
+
+      <img src="blue.png" alt="Official Stamp" class="stamp">
+    </main>
+
+    <footer>
+      <p>&copy; PyleaMUN Conference Team</p>
+    </footer>
+  </div>
 
 </body>
 </html>
